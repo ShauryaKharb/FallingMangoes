@@ -4,7 +4,7 @@ class ROCK{
             isStatic:false , 
             restitution : 1
         }
-        this.r = r;
+        this.r = r/2;
         this.x = x;
         this.y = y;
         this.body=MyBodies.circle(x,y,r/2,options);

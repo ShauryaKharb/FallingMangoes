@@ -4,7 +4,7 @@ class ROCK{
             isStatic:false , 
             restitution : 1
         }
-        this.r = r/2;
+        this.r = r;
         this.x = x;
         this.y = y;
         this.body=MyBodies.circle(x,y,r/2,options);
@@ -25,7 +25,7 @@ class ROCK{
         rotate(angle);
         fill("white");
         //ellipse(0,0,this.radius,this.radius);
-        image(this.image,0,0,this.r*2,this.r*2);
+        image(this.image,0,0,this.r,this.r);
         pop();
     }
 }
